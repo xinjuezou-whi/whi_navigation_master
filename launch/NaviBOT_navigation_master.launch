@@ -9,4 +9,3 @@
       args="-d $(dirname)/navigation_master.rviz"/>
   </group>
 </launch>
-
