@@ -12,7 +12,7 @@
 
   <!-- rviz -->
   <group if="$(arg open_rviz)">
-    <node pkg="rviz" type="rviz" name="rviz_master" required="true"
+    <node pkg="rviz" type="rviz" name="rviz_master" required="true" output="screen"
       args="-d $(dirname)/navigation.rviz"/>
   </group>
 </launch>
