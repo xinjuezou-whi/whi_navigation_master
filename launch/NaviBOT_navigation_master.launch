@@ -6,9 +6,6 @@
 
   <!-- Map server -->
   <node pkg="map_server" name="map_server" type="map_server" args="$(arg map_file)"/>
-  <node pkg="tf2_ros" type="static_transform_publisher" name="tf_map_odom" args="0 0 0 0 0 0 map odom"/>
-  <node pkg="tf2_ros" type="static_transform_publisher" name="tf_odom_nsodom"
-    args="0 0 0 0 0 0 odom NaviBOT/controller/base_controller/odom"/>
 
   <!-- rviz -->
   <group if="$(arg open_rviz)">
